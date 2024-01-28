@@ -1,6 +1,8 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
+
+	const x = 4;
 </script>
 
 <div class="app">

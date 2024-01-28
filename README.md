@@ -1,3 +1,9 @@
+# check eslint problems
+
+<https://github.com/import-js/eslint-plugin-import>
+
+<https://typescript-eslint.io/linting/configs>
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
