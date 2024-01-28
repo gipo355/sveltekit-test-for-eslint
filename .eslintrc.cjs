@@ -1,6 +1,21 @@
 /** @type { import("eslint").Linter.Config } */
 module.exports = {
 	root: true,
+	// settings: {
+	// 	'import/resolver': {
+	// 		typescript: {
+	// 			alwaysTryTypes: true,
+	// 			project: './tsconfig.json'
+	// 		},
+	// 		// node: true
+	// 		node: {
+	// 			extensions: ['.js', '.jsx', '.cjs', '.mjs', '.ts', '.tsx', '.mts', '.cts']
+	// 		}
+	// 	},
+	// 	'import/parsers': {
+	// 		'@typescript-eslint/parser': ['.ts', '.tsx']
+	// 	}
+	// },
 	extends: [
 		'eslint:recommended',
 		// disables eslint rules already checked by typescript:cked
@@ -8,18 +23,21 @@ module.exports = {
 
 		// no typed linting:
 		// 'plugin:@typescript-eslint/recommended',
-		// 'plugin:@typescript-eslint/strict',
-		// 'plugin:@typescript-eslint/stylistic',
+		'plugin:@typescript-eslint/strict',
+		'plugin:@typescript-eslint/stylistic',
 
-		// with typed linting:
+		// with typed linting, has problems with svelte and fastify:
 		// 'plugin:@typescript-eslint/recommended-type-checked',
-		'plugin:@typescript-eslint/strict-type-checked',
-		'plugin:@typescript-eslint/stylistic-type-checked',
+		// 'plugin:@typescript-eslint/strict-type-checked',
+		// 'plugin:@typescript-eslint/stylistic-type-checked',
 		// 'plugin:@typescript-eslint/recommended-type-checked',
 		// what is this?
 
 		// 'plugin:@typescript-eslint/recommended-requiring-type-checking',
-		// "plugin:import/typescript",
+
+		// import:
+		// 'plugin:import/recommended',
+		// 'plugin:import/typescript',
 
 		'plugin:svelte/recommended',
 		'prettier'
